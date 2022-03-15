@@ -1,0 +1,4 @@
+sep=,
+"Architecture/PV (kW)","Architecture/G1500","Architecture/1kWh LI","Cost/NPC ($)","Cost/COE ($)","Cost/Operating cost ($/yr)","Cost/Initial capital ($)","System/Ren Frac (%)","System/Total Fuel (L/yr)","PV/Capital Cost ($)","PV/Production (kWh/yr)","G1500/Capital Cost ($)","G1500/Production (kWh/yr)","G1500/O&M Cost ($)","1kWh LI/Autonomy (hr)","1kWh LI/Annual Throughput (kWh/yr)","1kWh LI/Nominal Capacity (kWh)","1kWh LI/Usable Nominal Capacity (kWh)"
+"79976.8768965984","12","137484","1.991484E+08","0.2914223","3781786","1.253149E+08","100","0","5.998266E+07","1.385263E+08","1.845E+07","1.651491E+07","459000","27.49685","1.308586E+07","137484.3","109987.4"
+"123409.561313466","","239694","2.786999E+08","0.4078276","5347769","1.74293E+08","100","0","9.255717E+07","2.137552E+08","","","","47.9389","1.768857E+07","239694.5","191755.6"
