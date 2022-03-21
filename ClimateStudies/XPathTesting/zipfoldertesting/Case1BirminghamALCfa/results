@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HomerResults xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <CalculationTime>PT11.257488S</CalculationTime>
+  <MatchModel>false</MatchModel>
+  <Report>
+    <EngineVersion i:nil="true" />
+    <Errors />
+    <Optimization xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model">
+      <d2p1:InfeasibleHydrogenTankLevel>0</d2p1:InfeasibleHydrogenTankLevel>
+      <d2p1:InfeasibleMaxCapacityShortage>736</d2p1:InfeasibleMaxCapacityShortage>
+      <d2p1:InfeasibleMaxEmissionsCo>0</d2p1:InfeasibleMaxEmissionsCo>
+      <d2p1:InfeasibleMaxEmissionsCo2>0</d2p1:InfeasibleMaxEmissionsCo2>
+      <d2p1:InfeasibleMaxEmissionsNOx>0</d2p1:InfeasibleMaxEmissionsNOx>
+      <d2p1:InfeasibleMaxEmissionsPm>0</d2p1:InfeasibleMaxEmissionsPm>
+      <d2p1:InfeasibleMaxEmissionsSo2>0</d2p1:InfeasibleMaxEmissionsSo2>
+      <d2p1:InfeasibleMaxEmissionsUhc>0</d2p1:InfeasibleMaxEmissionsUhc>
+      <d2p1:InfeasibleMaxNetGridPurchases>0</d2p1:InfeasibleMaxNetGridPurchases>
+      <d2p1:InfeasibleMaxUnmetHydrogen>0</d2p1:InfeasibleMaxUnmetHydrogen>
+      <d2p1:InfeasibleMinBatteryLife>0</d2p1:InfeasibleMinBatteryLife>
+      <d2p1:InfeasibleMinRenewableFraction>0</d2p1:InfeasibleMinRenewableFraction>
+      <d2p1:InfeasibleThermalLoadController>0</d2p1:InfeasibleThermalLoadController>
+      <d2p1:InfeasibleUnmetFlywheelLoad>0</d2p1:InfeasibleUnmetFlywheelLoad>
+      <d2p1:NumberAttempted>1537</d2p1:NumberAttempted>
+      <d2p1:NumberFeasible>758</d2p1:NumberFeasible>
+      <d2p1:NumberSimulated>1529</d2p1:NumberSimulated>
+      <d2p1:OmittedCustomComponent>0</d2p1:OmittedCustomComponent>
+      <d2p1:OmittedDieselOffNotAllowedButNoGenerator>0</d2p1:OmittedDieselOffNotAllowedButNoGenerator>
+      <d2p1:OmittedIncompleteVrbBattery>0</d2p1:OmittedIncompleteVrbBattery>
+      <d2p1:OmittedInfeasible>0</d2p1:OmittedInfeasible>
+      <d2p1:OmittedMissingConverter>0</d2p1:OmittedMissingConverter>
+      <d2p1:OmittedMissingHydrogenSource>0</d2p1:OmittedMissingHydrogenSource>
+      <d2p1:OmittedNoGenerationSources>0</d2p1:OmittedNoGenerationSources>
+      <d2p1:OmittedPreviousYearInfeasible>0</d2p1:OmittedPreviousYearInfeasible>
+      <d2p1:OmittedUndersizedGenerator>0</d2p1:OmittedUndersizedGenerator>
+      <d2p1:OmittedUselessConverter>0</d2p1:OmittedUselessConverter>
+      <d2p1:OmittedUselessElectrolyzer>0</d2p1:OmittedUselessElectrolyzer>
+      <d2p1:OmittedUselessReformer>0</d2p1:OmittedUselessReformer>
+    </Optimization>
+    <ProductVersion i:nil="true" />
+    <Warnings />
+  </Report>
+  <SimulationSpeed>0</SimulationSpeed>
+  <SimulationSpeedSlowest>0</SimulationSpeedSlowest>
+  <TotalOptimizations>0</TotalOptimizations>
+  <TotalSensitivities>0</TotalSensitivities>
+</HomerResults>
