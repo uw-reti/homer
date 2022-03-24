@@ -1,4 +1,4 @@
-﻿<xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <HomerProblem xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1">
   <Batteries />
   <BiomassResources />
@@ -223,7 +223,7 @@
     </Controller>
   </Controllers>
   <Converter i:nil="true" />
-  <CreatedWith i:nil="true" />
+  <CreatedWith>batch</CreatedWith>
   <Currency xmlns:d1p1="http://schemas.datacontract.org/2004/07/HomerModel.Model">
     <d1p1:Code>USD</d1p1:Code>
   </Currency>
@@ -35321,29 +35321,29 @@
   <Locale z:Id="i31">
     <Geocode xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Resources" z:Id="i32">
       <d2p1:Country>United States</d2p1:Country>
-      <d2p1:FullAddress>Baton Rouge and Virtually Everywhere,, New Orleans, LA 70112, USA</d2p1:FullAddress>
-      <d2p1:PostalCode>70112</d2p1:PostalCode>
-      <d2p1:State>Louisiana</d2p1:State>
+      <d2p1:FullAddress>JWVP+6F Eielson Air Force Base, AK, USA</d2p1:FullAddress>
+      <d2p1:PostalCode>99702</d2p1:PostalCode>
+      <d2p1:State>Alaska</d2p1:State>
     </Geocode>
     <Latitude z:Id="i33">
-      <Degrees>29</Degrees>
+      <Degrees>64</Degrees>
       <IsNorth>true</IsNorth>
-      <Minutes>30</Minutes>
+      <Minutes>38.585711999999400</Minutes>
     </Latitude>
     <Longitude z:Id="i34">
-      <Degrees>90</Degrees>
+      <Degrees>147</Degrees>
       <IsEast>false</IsEast>
-      <Minutes>30</Minutes>
+      <Minutes>3.82940399999938800</Minutes>
     </Longitude>
-    <Name>Baton Rouge and Virtually Everywhere,, New Orleans, LA 70112, USA</Name>
-    <TimeZone>-6</TimeZone>
-    <TimeZoneId>America/Chicago</TimeZoneId>
+    <Name>JWVP+6F Eielson Air Force Base, AK, USA</Name>
+    <TimeZone>-9</TimeZone>
+    <TimeZoneId>America/Anchorage</TimeZoneId>
     <ZoomLevel>0</ZoomLevel>
   </Locale>
   <NeedsCalculateWithDoubleEngine>true</NeedsCalculateWithDoubleEngine>
   <ProjectAuthor></ProjectAuthor>
   <ProjectNotes></ProjectNotes>
-  <ProjectTitle>NOLA Case 1</ProjectTitle>
+  <ProjectTitle>UW Madison</ProjectTitle>
   <Pvs>
     <PV z:Id="i35">
       <Abbreviation>PV</Abbreviation>
@@ -35511,7 +35511,7 @@
         <UseOptimizer>true</UseOptimizer>
       </OptimizationVariable>
       <SlopeSensitivity z:Id="i67">
-        <decimal>29.951065799999991</decimal>
+        <decimal>64.64309519999999</decimal>
       </SlopeSensitivity>
       <TemperatureCoefficientOfPowerSensitivity z:Id="i68">
         <decimal>-0.350</decimal>
@@ -35765,36 +35765,36 @@
     <Solar z:Id="i122">
       <Name>Solar</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 1/14/2022 11:49:29 AM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:17 PM from:
 National Renewable Energy Laboratory database.
 National Solar Radiation Database
-cellMidpointLatitude: 33.495998382568359
-cellMidpointLongitude: -112.20899963378906
+cellMidpointLatitude: 64.7969970703125
+cellMidpointLongitude: -147.34100341796875
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/14/2022 11:49:29 AM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:17 PM from:
 National Renewable Energy Laboratory database.
 National Solar Radiation Database
-cellMidpointLatitude: 33.495998382568359
-cellMidpointLongitude: -112.20899963378906
+cellMidpointLatitude: 64.7969970703125
+cellMidpointLongitude: -147.34100341796875
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>3.25</a:decimal>
+        <a:decimal>0.13</a:decimal>
+        <a:decimal>0.71</a:decimal>
+        <a:decimal>2.19</a:decimal>
         <a:decimal>4.09</a:decimal>
-        <a:decimal>5.45</a:decimal>
-        <a:decimal>6.77</a:decimal>
-        <a:decimal>7.63</a:decimal>
-        <a:decimal>7.93</a:decimal>
-        <a:decimal>7.21</a:decimal>
-        <a:decimal>6.63</a:decimal>
-        <a:decimal>5.91</a:decimal>
-        <a:decimal>4.72</a:decimal>
-        <a:decimal>3.67</a:decimal>
-        <a:decimal>2.97</a:decimal>
+        <a:decimal>5.01</a:decimal>
+        <a:decimal>5.68</a:decimal>
+        <a:decimal>5.34</a:decimal>
+        <a:decimal>3.91</a:decimal>
+        <a:decimal>2.35</a:decimal>
+        <a:decimal>1.04</a:decimal>
+        <a:decimal>0.31</a:decimal>
+        <a:decimal>0.05</a:decimal>
       </MonthlyAverage>
       <ScaledAnnualAverageSensitivity z:Id="i123">
-        <decimal>5.5191666666666666666666666667</decimal>
+        <decimal>2.5675</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
@@ -36067,36 +36067,36 @@ cellMidpointLongitude: -112.20899963378906
     <Temperature z:Id="i172">
       <Name>Temp</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 1/14/2022 11:49:28 AM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:17 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average air temperature over 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 33.25
-cellMidpointLongitude: -112.25
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/14/2022 11:49:28 AM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:17 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average air temperature over 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 33.25
-cellMidpointLongitude: -112.25
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>10.94</a:decimal>
-        <a:decimal>12.7</a:decimal>
-        <a:decimal>16.28</a:decimal>
-        <a:decimal>20.41</a:decimal>
-        <a:decimal>26.07</a:decimal>
-        <a:decimal>31.43</a:decimal>
-        <a:decimal>33.63</a:decimal>
-        <a:decimal>32.8</a:decimal>
-        <a:decimal>29.61</a:decimal>
-        <a:decimal>22.95</a:decimal>
-        <a:decimal>15.78</a:decimal>
-        <a:decimal>10.56</a:decimal>
+        <a:decimal>-20.08</a:decimal>
+        <a:decimal>-17.06</a:decimal>
+        <a:decimal>-13.49</a:decimal>
+        <a:decimal>-3.12</a:decimal>
+        <a:decimal>7.47</a:decimal>
+        <a:decimal>14.11</a:decimal>
+        <a:decimal>15.27</a:decimal>
+        <a:decimal>12.01</a:decimal>
+        <a:decimal>5.49</a:decimal>
+        <a:decimal>-5.27</a:decimal>
+        <a:decimal>-16.38</a:decimal>
+        <a:decimal>-17.86</a:decimal>
       </MonthlyAverage>
       <ScaledAnnualAverageSensitivity z:Id="i173">
-        <decimal>21.93</decimal>
+        <decimal>-3.2425</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
@@ -36110,36 +36110,36 @@ cellMidpointLongitude: -112.25
     <Wind z:Id="i174">
       <Name>Wind</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 1/14/2022 11:49:27 AM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:16 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average wind speed at 50m above the surface of earth over a 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 33.25
-cellMidpointLongitude: -112.25
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/14/2022 11:49:27 AM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:16 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average wind speed at 50m above the surface of earth over a 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 33.25
-cellMidpointLongitude: -112.25
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>4.66</a:decimal>
+        <a:decimal>5.15</a:decimal>
+        <a:decimal>4.95</a:decimal>
         <a:decimal>4.48</a:decimal>
-        <a:decimal>4.55</a:decimal>
-        <a:decimal>4.92</a:decimal>
-        <a:decimal>4.77</a:decimal>
-        <a:decimal>4.79</a:decimal>
-        <a:decimal>4.08</a:decimal>
-        <a:decimal>3.62</a:decimal>
-        <a:decimal>4</a:decimal>
-        <a:decimal>4.25</a:decimal>
-        <a:decimal>4.54</a:decimal>
+        <a:decimal>3.89</a:decimal>
+        <a:decimal>3.72</a:decimal>
+        <a:decimal>3.41</a:decimal>
+        <a:decimal>3.36</a:decimal>
+        <a:decimal>3.6</a:decimal>
+        <a:decimal>3.8</a:decimal>
+        <a:decimal>3.9</a:decimal>
         <a:decimal>4.52</a:decimal>
+        <a:decimal>5.01</a:decimal>
       </MonthlyAverage>
       <ScaledAnnualAverageSensitivity z:Id="i175">
-        <decimal>4.4316666666666666666666666667</decimal>
+        <decimal>4.1491666666666666666666666667</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
