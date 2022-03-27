@@ -223,7 +223,7 @@
     </Controller>
   </Controllers>
   <Converter i:nil="true" />
-  <CreatedWith i:nil="true" />
+  <CreatedWith>batch</CreatedWith>
   <Currency xmlns:d1p1="http://schemas.datacontract.org/2004/07/HomerModel.Model">
     <d1p1:Code>USD</d1p1:Code>
   </Currency>
@@ -232,786 +232,19 @@
   <Electrolyzer i:nil="true" />
   <EvChargers />
   <Flywheels />
-  <FuelResources>
-    <Fuel z:Id="i25">
-      <Name>Diesel</Name>
-      <Notes i:nil="true" />
-      <BioFuel>false</BioFuel>
-      <CarbonContent>88</CarbonContent>
-      <Density>820</Density>
-      <FuelCostMultiYear z:Id="i26">
-        <Direction>Increasing</Direction>
-        <Value>0</Value>
-        <Values />
-      </FuelCostMultiYear>
-      <FuelCostSensitivity z:Id="i27">
-        <decimal>1.00</decimal>
-      </FuelCostSensitivity>
-      <Hydrogen>false</Hydrogen>
-      <LimitQuantity>false</LimitQuantity>
-      <LowerHeatingValue>43.2</LowerHeatingValue>
-      <QuantityAvailableSensitivity z:Id="i28">
-        <decimal>5000</decimal>
-      </QuantityAvailableSensitivity>
-      <SulfurContent>0.4</SulfurContent>
-      <Units>L</Units>
-    </Fuel>
-  </FuelResources>
-  <Generators>
-    <Generator z:Id="i29">
-      <Abbreviation>GenLarge</Abbreviation>
-      <Brand>Generic</Brand>
-      <CapitalCostMultiplierSensitivity z:Id="i30">
-        <decimal>1</decimal>
-      </CapitalCostMultiplierSensitivity>
-      <CostMatrix>
-        <Cost z:Id="i31">
-          <CapitalCostDetail>
-            <CostCalculatorItem z:Id="i32">
-              <Name>Capital</Name>
-              <Quantity>1</Quantity>
-              <UnitCost>500</UnitCost>
-            </CostCalculatorItem>
-          </CapitalCostDetail>
-          <Initial>1000000000</Initial>
-          <Operating>0.01</Operating>
-          <Quantity>1</Quantity>
-          <Replacement>1000000000</Replacement>
-          <ReplacementCostDetail>
-            <CostCalculatorItem z:Id="i33">
-              <Name>Replacement</Name>
-              <Quantity>1</Quantity>
-              <UnitCost>500</UnitCost>
-            </CostCalculatorItem>
-          </ReplacementCostDetail>
-        </Cost>
-      </CostMatrix>
-      <Id>6ddfbb23-113d-4a54-9f97-a4d40acd69e7</Id>
-      <IsAc>true</IsAc>
-      <Manufacturer>Generic</Manufacturer>
-      <Modified>2017-02-22T14:37:22.0765015-06:00</Modified>
-      <Name>Generic Large Genset (size-your-own)</Name>
-      <Notes i:nil="true" />
-      <OmCostMultiplierSensitivity z:Id="i34">
-        <decimal>1</decimal>
-      </OmCostMultiplierSensitivity>
-      <Optimizer z:Id="i35">
-        <BaseCase>0</BaseCase>
-        <LowerBound>0</LowerBound>
-        <MinimumSpacing>0</MinimumSpacing>
-        <ShowAdvancedInputs>false</ShowAdvancedInputs>
-        <UpperBound>0</UpperBound>
-        <UseOptimizer>false</UseOptimizer>
-      </Optimizer>
-      <ProductImage i:nil="true" />
-      <ReplacementCostMultiplierSensitivity z:Id="i36">
-        <decimal>1</decimal>
-      </ReplacementCostMultiplierSensitivity>
-      <RequiresOneMinuteTimestep>false</RequiresOneMinuteTimestep>
-      <Url>http://www.homerenergy.com</Url>
-      <Website>www.homerenergy.com</Website>
-      <Weight>0</Weight>
-      <AllowNegativeMinimumLoad>false</AllowNegativeMinimumLoad>
-      <AlwaysIncluded>false</AlwaysIncluded>
-      <Autosize>false</Autosize>
-      <CapacityOptimization z:Id="i37">
-        <decimal>2000</decimal>
-        <decimal>0</decimal>
-      </CapacityOptimization>
-      <DeratingFactorSensitivity z:Id="i38">
-        <decimal>70</decimal>
-      </DeratingFactorSensitivity>
-      <EmissionsFactorCo>13.566</EmissionsFactorCo>
-      <EmissionsFactorNOx>2.60</EmissionsFactorNOx>
-      <EmissionsFactorPm>0.116</EmissionsFactorPm>
-      <EmissionsFactorUhc>0.72</EmissionsFactorUhc>
-      <EmissionsSulfurPmRatio>2.2</EmissionsSulfurPmRatio>
-      <FixedCapacity>0</FixedCapacity>
-      <FuelCurve />
-      <FuelCurveInterceptSensitivity z:Id="i39">
-        <decimal>0.014</decimal>
-      </FuelCurveInterceptSensitivity>
-      <FuelCurveReferenceCapacity>2000</FuelCurveReferenceCapacity>
-      <FuelCurveSlopeSensitivity z:Id="i40">
-        <decimal>0.244</decimal>
-      </FuelCurveSlopeSensitivity>
-      <FuelResource z:Ref="i25" />
-      <HasInitialHours>false</HasInitialHours>
-      <HeatRecoveryRatioSensitivity z:Id="i41">
-        <decimal>0</decimal>
-      </HeatRecoveryRatioSensitivity>
-      <InitialHours>0</InitialHours>
-      <IsCofiredWithBiogas>false</IsCofiredWithBiogas>
-      <IsCofiredWithBiogasSensitivity z:Id="i42">
-        <boolean>false</boolean>
-      </IsCofiredWithBiogasSensitivity>
-      <IsFixedCapacity>false</IsFixedCapacity>
-      <LifetimeSensitivity z:Id="i43">
-        <decimal>15000</decimal>
-      </LifetimeSensitivity>
-      <Maintenance z:Id="i44">
-        <MaintenanceItems />
-        <UseMaintenanceSchedule>false</UseMaintenanceSchedule>
-      </Maintenance>
-      <MaintenanceSchedule i:nil="true" />
-      <MinimumFossilFractionSensitivity z:Id="i45">
-        <decimal>20</decimal>
-      </MinimumFossilFractionSensitivity>
-      <MinimumLoadRatioSensitivity z:Id="i46">
-        <decimal>25</decimal>
-      </MinimumLoadRatioSensitivity>
-      <MinimumRuntimeSensitivity z:Id="i47">
-        <decimal>0</decimal>
-      </MinimumRuntimeSensitivity>
-      <NonlinearIntercept>0.000033650</NonlinearIntercept>
-      <NonlinearSlope>0.00037855</NonlinearSlope>
-      <NonlinearX0>0.1784</NonlinearX0>
-      <NonlinearX1>0.2016</NonlinearX1>
-      <NonlinearX2>0.4444</NonlinearX2>
-      <ResourceName>Diesel</ResourceName>
-      <Schedule>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-        <a:ArrayOfint>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-          <a:int>0</a:int>
-        </a:ArrayOfint>
-      </Schedule>
-      <SubstitutionRatioSensitivity z:Id="i48">
-        <decimal>8.5</decimal>
-      </SubstitutionRatioSensitivity>
-      <UseNonlinearFuelCurve>false</UseNonlinearFuelCurve>
-    </Generator>
-  </Generators>
+  <FuelResources />
+  <Generators />
   <Grid i:nil="true" />
   <Hydro i:nil="true" />
   <HydrogenTank i:nil="true" />
   <HydrokineticResources />
   <Hydrokinetics />
   <LinkedVariables />
-  <LoadBuilder z:Id="i49">
+  <LoadBuilder z:Id="i25">
     <BaseItems />
     <BasePath i:nil="true" />
     <Definitions>
-      <LoadDefinitionModel z:Id="i50">
+      <LoadDefinitionModel z:Id="i26">
         <Description></Description>
         <Items />
         <Name></Name>
@@ -1020,17 +253,17 @@
     </Definitions>
   </LoadBuilder>
   <LoadFancy>
-    <LoadBase z:Id="i51" xmlns="" i:type="Electric">
+    <LoadBase z:Id="i27" xmlns="" i:type="Electric">
       <Name>Electric Load #1</Name>
-      <ScaledAnnualAverageMultiYear z:Id="i52">
+      <ScaledAnnualAverageMultiYear z:Id="i28">
         <Direction>Increasing</Direction>
         <Value>0</Value>
         <Values />
       </ScaledAnnualAverageMultiYear>
-      <ScaledAnnualAverageSensitivity z:Id="i53">
+      <ScaledAnnualAverageSensitivity z:Id="i29">
         <decimal>96000</decimal>
       </ScaledAnnualAverageSensitivity>
-      <Data z:Id="i54" xmlns="" i:type="Imported">
+      <Data z:Id="i30" xmlns="" i:type="Imported">
         <Filename i:nil="true" />
         <TimeSeries>
           <a:float>3145.1792</a:float>
@@ -36085,37 +35318,37 @@
     </LoadBase>
   </LoadFancy>
   <Loads />
-  <Locale z:Id="i55">
-    <Geocode xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Resources" z:Id="i56">
+  <Locale z:Id="i31">
+    <Geocode xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Resources" z:Id="i32">
       <d2p1:Country>United States</d2p1:Country>
-      <d2p1:FullAddress>399-301 S Federal St, Chicago, IL 60604, USA</d2p1:FullAddress>
-      <d2p1:PostalCode>60604</d2p1:PostalCode>
-      <d2p1:State>Illinois</d2p1:State>
+      <d2p1:FullAddress>JWVP+6F Eielson Air Force Base, AK, USA</d2p1:FullAddress>
+      <d2p1:PostalCode>99702</d2p1:PostalCode>
+      <d2p1:State>Alaska</d2p1:State>
     </Geocode>
-    <Latitude z:Id="i57">
-      <Degrees>41</Degrees>
+    <Latitude z:Id="i33">
+      <Degrees>64</Degrees>
       <IsNorth>true</IsNorth>
-      <Minutes>52.6868159999999400</Minutes>
+      <Minutes>38.585711999999400</Minutes>
     </Latitude>
-    <Longitude z:Id="i58">
-      <Degrees>87</Degrees>
+    <Longitude z:Id="i34">
+      <Degrees>147</Degrees>
       <IsEast>false</IsEast>
-      <Minutes>37.7878919999997600</Minutes>
+      <Minutes>3.82940399999938800</Minutes>
     </Longitude>
-    <Name>399-301 S Federal St, Chicago, IL 60604, USA</Name>
-    <TimeZone>-6</TimeZone>
-    <TimeZoneId>America/Chicago</TimeZoneId>
+    <Name>JWVP+6F Eielson Air Force Base, AK, USA</Name>
+    <TimeZone>-9</TimeZone>
+    <TimeZoneId>America/Anchorage</TimeZoneId>
     <ZoomLevel>0</ZoomLevel>
   </Locale>
   <NeedsCalculateWithDoubleEngine>true</NeedsCalculateWithDoubleEngine>
   <ProjectAuthor></ProjectAuthor>
   <ProjectNotes></ProjectNotes>
-  <ProjectTitle>Chicago Case 1</ProjectTitle>
+  <ProjectTitle>UW Madison</ProjectTitle>
   <Pvs>
-    <PV z:Id="i59">
+    <PV z:Id="i35">
       <Abbreviation>PV</Abbreviation>
       <Brand>Generic</Brand>
-      <CapitalCostMultiplierSensitivity z:Id="i60">
+      <CapitalCostMultiplierSensitivity z:Id="i36">
         <decimal>1</decimal>
       </CapitalCostMultiplierSensitivity>
       <CostMatrix />
@@ -36125,10 +35358,10 @@
       <Modified>2019-03-15T16:23:45.1812011-05:00</Modified>
       <Name>Generic flat plate PV</Name>
       <Notes>This is a generic PV system.</Notes>
-      <OmCostMultiplierSensitivity z:Id="i61">
+      <OmCostMultiplierSensitivity z:Id="i37">
         <decimal>1</decimal>
       </OmCostMultiplierSensitivity>
-      <Optimizer z:Id="i62">
+      <Optimizer z:Id="i38">
         <BaseCase>0</BaseCase>
         <LowerBound>0</LowerBound>
         <MinimumSpacing>0</MinimumSpacing>
@@ -36137,32 +35370,32 @@
         <UseOptimizer>false</UseOptimizer>
       </Optimizer>
       <ProductImage i:nil="true" />
-      <ReplacementCostMultiplierSensitivity z:Id="i63">
+      <ReplacementCostMultiplierSensitivity z:Id="i39">
         <decimal>1</decimal>
       </ReplacementCostMultiplierSensitivity>
       <RequiresOneMinuteTimestep>false</RequiresOneMinuteTimestep>
       <Url>http://www.homerenergy.com</Url>
       <Website>www.homerenergy.com</Website>
       <Weight>160</Weight>
-      <AzimuthSensitivity z:Id="i64">
+      <AzimuthSensitivity z:Id="i40">
         <decimal>0</decimal>
       </AzimuthSensitivity>
       <CPv>false</CPv>
       <CapacityOptimization i:nil="true" />
       <ConsiderTemperatureEffect>true</ConsiderTemperatureEffect>
-      <ConsiderTemperatureEffectSensitivity z:Id="i65">
+      <ConsiderTemperatureEffectSensitivity z:Id="i41">
         <boolean>true</boolean>
       </ConsiderTemperatureEffectSensitivity>
-      <DcAcRatioOptimization z:Id="i66">
+      <DcAcRatioOptimization z:Id="i42">
         <decimal>1</decimal>
       </DcAcRatioOptimization>
-      <DcCapacityOptimization z:Id="i67">
+      <DcCapacityOptimization z:Id="i43">
         <decimal>1</decimal>
       </DcCapacityOptimization>
       <DcCostMatrix>
-        <Cost z:Id="i68">
+        <Cost z:Id="i44">
           <CapitalCostDetail>
-            <CostCalculatorItem z:Id="i69">
+            <CostCalculatorItem z:Id="i45">
               <Name>Capital</Name>
               <Quantity>1</Quantity>
               <UnitCost>0</UnitCost>
@@ -36173,7 +35406,7 @@
           <Quantity>1</Quantity>
           <Replacement>0</Replacement>
           <ReplacementCostDetail>
-            <CostCalculatorItem z:Id="i70">
+            <CostCalculatorItem z:Id="i46">
               <Name>Replacement</Name>
               <Quantity>1</Quantity>
               <UnitCost>0</UnitCost>
@@ -36183,39 +35416,39 @@
       </DcCostMatrix>
       <DcEfficiency>95</DcEfficiency>
       <DcEfficiencyTable />
-      <DcLifetimeSensitivity z:Id="i71">
+      <DcLifetimeSensitivity z:Id="i47">
         <decimal>15</decimal>
       </DcLifetimeSensitivity>
       <DcMatchToPv>true</DcMatchToPv>
-      <DegradationMultiYear z:Id="i72">
+      <DegradationMultiYear z:Id="i48">
         <Direction>Decreasing</Direction>
         <Value>0</Value>
         <Values />
       </DegradationMultiYear>
-      <DeratingFactorSensitivity z:Id="i73">
+      <DeratingFactorSensitivity z:Id="i49">
         <decimal>80</decimal>
       </DeratingFactorSensitivity>
       <DniRatingCondition>0</DniRatingCondition>
-      <EfficiencyAtStcSensitivity z:Id="i74">
+      <EfficiencyAtStcSensitivity z:Id="i50">
         <decimal>13</decimal>
       </EfficiencyAtStcSensitivity>
-      <GroundReflectanceSensitivity z:Id="i75">
+      <GroundReflectanceSensitivity z:Id="i51">
         <decimal>20</decimal>
       </GroundReflectanceSensitivity>
       <HasDcEfficiencyTable>false</HasDcEfficiencyTable>
       <LifetimeSensitivity i:nil="true" />
-      <NominalOperatingCellTemperatureSensitivity z:Id="i76">
+      <NominalOperatingCellTemperatureSensitivity z:Id="i52">
         <decimal>47</decimal>
       </NominalOperatingCellTemperatureSensitivity>
-      <OptimizationVariable z:Id="i77">
-        <CostTable z:Id="i78">
-          <CapitalMultiplier z:Id="i79">
+      <OptimizationVariable z:Id="i53">
+        <CostTable z:Id="i54">
+          <CapitalMultiplier z:Id="i55">
             <decimal>1</decimal>
           </CapitalMultiplier>
           <Costs>
-            <Cost z:Id="i80">
+            <Cost z:Id="i56">
               <CapitalCostDetail>
-                <CostCalculatorItem z:Id="i81">
+                <CostCalculatorItem z:Id="i57">
                   <Name>Capital</Name>
                   <Quantity>1</Quantity>
                   <UnitCost>3000</UnitCost>
@@ -36226,7 +35459,7 @@
               <Quantity>1</Quantity>
               <Replacement>750</Replacement>
               <ReplacementCostDetail>
-                <CostCalculatorItem z:Id="i82">
+                <CostCalculatorItem z:Id="i58">
                   <Name>Replacement</Name>
                   <Quantity>1</Quantity>
                   <UnitCost>3000</UnitCost>
@@ -36235,10 +35468,10 @@
             </Cost>
           </Costs>
           <Lifetimes>
-            <Lifetime z:Id="i83">
+            <Lifetime z:Id="i59">
               <Name>time</Name>
               <Units>years</Units>
-              <Value z:Id="i84">
+              <Value z:Id="i60">
                 <decimal>30</decimal>
               </Value>
             </Lifetime>
@@ -36246,30 +35479,30 @@
           <Name>PV</Name>
           <OmFormat i:nil="true" />
           <OmHide>false</OmHide>
-          <OmMultiplier z:Id="i85">
+          <OmMultiplier z:Id="i61">
             <decimal>1</decimal>
           </OmMultiplier>
           <OmUnits>$/year</OmUnits>
-          <ReplacementMultiplier z:Id="i86">
+          <ReplacementMultiplier z:Id="i62">
             <decimal>1</decimal>
           </ReplacementMultiplier>
           <Unit>Capacity</Unit>
-          <VariableOmCost z:Id="i87">
+          <VariableOmCost z:Id="i63">
             <decimal>0</decimal>
           </VariableOmCost>
         </CostTable>
         <Disabled>false</Disabled>
         <Model>Capacity</Model>
         <Name>Size</Name>
-        <Optimizer z:Id="i88" xmlns="" i:type="OptimizerOfdecimal">
+        <Optimizer z:Id="i64" xmlns="" i:type="OptimizerOfdecimal">
           <ShowAdvancedInputs>false</ShowAdvancedInputs>
           <BaseCase>0</BaseCase>
           <LowerBound>0</LowerBound>
           <MinimumSpacing>0</MinimumSpacing>
           <UpperBound>96001</UpperBound>
         </Optimizer>
-        <SearchSpace z:Id="i89" xmlns="" i:type="SearchSpaceOfdecimal">
-          <Values z:Id="i90">
+        <SearchSpace z:Id="i65" xmlns="" i:type="SearchSpaceOfdecimal">
+          <Values z:Id="i66">
             <decimal>0</decimal>
             <decimal>1</decimal>
           </Values>
@@ -36277,10 +35510,10 @@
         <Units>kW</Units>
         <UseOptimizer>true</UseOptimizer>
       </OptimizationVariable>
-      <SlopeSensitivity z:Id="i91">
-        <decimal>41.878113599999999</decimal>
+      <SlopeSensitivity z:Id="i67">
+        <decimal>64.64309519999999</decimal>
       </SlopeSensitivity>
-      <TemperatureCoefficientOfPowerSensitivity z:Id="i92">
+      <TemperatureCoefficientOfPowerSensitivity z:Id="i68">
         <decimal>-0.350</decimal>
       </TemperatureCoefficientOfPowerSensitivity>
       <Tracking>6</Tracking>
@@ -36291,82 +35524,82 @@
   </Pvs>
   <ReadFileWarnings i:nil="true" />
   <Reformer i:nil="true" />
-  <SimulationParameters z:Id="i93">
-    <Constraints z:Id="i94">
+  <SimulationParameters z:Id="i69">
+    <Constraints z:Id="i70">
       <EnforceMinimumRenewableFraction>false</EnforceMinimumRenewableFraction>
-      <MaximumAnnualCapacityShortageSensitivity z:Id="i95">
+      <MaximumAnnualCapacityShortageSensitivity z:Id="i71">
         <decimal>0.01</decimal>
       </MaximumAnnualCapacityShortageSensitivity>
-      <MinimumPrimaryEnergySavingsSensitivity z:Id="i96">
+      <MinimumPrimaryEnergySavingsSensitivity z:Id="i72">
         <decimal>0</decimal>
       </MinimumPrimaryEnergySavingsSensitivity>
-      <MinimumRenewableFractionSensitivity z:Id="i97">
+      <MinimumRenewableFractionSensitivity z:Id="i73">
         <decimal>0</decimal>
       </MinimumRenewableFractionSensitivity>
-      <OperatingReserveLoadPeakSensitivity z:Id="i98">
+      <OperatingReserveLoadPeakSensitivity z:Id="i74">
         <decimal>0</decimal>
       </OperatingReserveLoadPeakSensitivity>
-      <OperatingReserveLoadTimestepSensitivity z:Id="i99">
+      <OperatingReserveLoadTimestepSensitivity z:Id="i75">
         <decimal>0.00</decimal>
       </OperatingReserveLoadTimestepSensitivity>
-      <OperatingReserveSolarSensitivity z:Id="i100">
+      <OperatingReserveSolarSensitivity z:Id="i76">
         <decimal>0.00</decimal>
       </OperatingReserveSolarSensitivity>
-      <OperatingReserveWindSensitivity z:Id="i101">
+      <OperatingReserveWindSensitivity z:Id="i77">
         <decimal>0.00</decimal>
       </OperatingReserveWindSensitivity>
-      <ReferenceElectricalEfficiencySensitivity z:Id="i102">
+      <ReferenceElectricalEfficiencySensitivity z:Id="i78">
         <decimal>0</decimal>
       </ReferenceElectricalEfficiencySensitivity>
-      <ReferenceThermalEfficiencySensitivity z:Id="i103">
+      <ReferenceThermalEfficiencySensitivity z:Id="i79">
         <decimal>0</decimal>
       </ReferenceThermalEfficiencySensitivity>
       <UseMinimumPrimaryEnergySavings>false</UseMinimumPrimaryEnergySavings>
     </Constraints>
     <DemandResponseEvents xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model" />
-    <Economics z:Id="i104">
-      <CapacityShortagePenaltySensitivity z:Id="i105">
+    <Economics z:Id="i80">
+      <CapacityShortagePenaltySensitivity z:Id="i81">
         <decimal>0</decimal>
       </CapacityShortagePenaltySensitivity>
       <Incentives />
-      <InflationRateSensitivity z:Id="i106">
+      <InflationRateSensitivity z:Id="i82">
         <decimal>0</decimal>
       </InflationRateSensitivity>
-      <InterestRateSensitivity z:Id="i107">
+      <InterestRateSensitivity z:Id="i83">
         <decimal>2</decimal>
       </InterestRateSensitivity>
-      <ProjectLifetimeSensitivity z:Id="i108">
+      <ProjectLifetimeSensitivity z:Id="i84">
         <decimal>25</decimal>
       </ProjectLifetimeSensitivity>
-      <SystemFixedCapitalCostSensitivity z:Id="i109">
+      <SystemFixedCapitalCostSensitivity z:Id="i85">
         <decimal>0</decimal>
       </SystemFixedCapitalCostSensitivity>
-      <SystemFixedOmCostMultiYear z:Id="i110">
+      <SystemFixedOmCostMultiYear z:Id="i86">
         <Direction>Increasing</Direction>
         <Value>0</Value>
         <Values />
       </SystemFixedOmCostMultiYear>
-      <SystemFixedOmCostSensitivity z:Id="i111">
+      <SystemFixedOmCostSensitivity z:Id="i87">
         <decimal>0</decimal>
       </SystemFixedOmCostSensitivity>
     </Economics>
-    <Emissions z:Id="i112">
-      <EmissionsPenaltyCo2Sensitivity z:Id="i113">
+    <Emissions z:Id="i88">
+      <EmissionsPenaltyCo2Sensitivity z:Id="i89">
         <decimal>0</decimal>
       </EmissionsPenaltyCo2Sensitivity>
-      <EmissionsPenaltyCoSensitivity z:Id="i114">
+      <EmissionsPenaltyCoSensitivity z:Id="i90">
         <decimal>0</decimal>
       </EmissionsPenaltyCoSensitivity>
-      <EmissionsPenaltyNOxSensitivity z:Id="i115">
+      <EmissionsPenaltyNOxSensitivity z:Id="i91">
         <decimal>0</decimal>
       </EmissionsPenaltyNOxSensitivity>
-      <EmissionsPenaltyPmSensitivity z:Id="i116">
+      <EmissionsPenaltyPmSensitivity z:Id="i92">
         <decimal>0</decimal>
       </EmissionsPenaltyPmSensitivity>
-      <EmissionsPenaltySo2Sensitivity z:Id="i117">
+      <EmissionsPenaltySo2Sensitivity z:Id="i93">
         <decimal>0</decimal>
       </EmissionsPenaltySo2Sensitivity>
-      <EmissionsPenaltyUhcSensitivity z:Id="i118">
+      <EmissionsPenaltyUhcSensitivity z:Id="i94">
         <decimal>0</decimal>
       </EmissionsPenaltyUhcSensitivity>
       <EnforceMaxEmissionsCo>false</EnforceMaxEmissionsCo>
@@ -36375,69 +35608,69 @@
       <EnforceMaxEmissionsPm>false</EnforceMaxEmissionsPm>
       <EnforceMaxEmissionsSo2>false</EnforceMaxEmissionsSo2>
       <EnforceMaxEmissionsUhc>false</EnforceMaxEmissionsUhc>
-      <MaxEmissionsCo2Sensitivity z:Id="i119">
+      <MaxEmissionsCo2Sensitivity z:Id="i95">
         <decimal>0</decimal>
       </MaxEmissionsCo2Sensitivity>
-      <MaxEmissionsCoSensitivity z:Id="i120">
+      <MaxEmissionsCoSensitivity z:Id="i96">
         <decimal>0</decimal>
       </MaxEmissionsCoSensitivity>
-      <MaxEmissionsNOxSensitivity z:Id="i121">
+      <MaxEmissionsNOxSensitivity z:Id="i97">
         <decimal>0</decimal>
       </MaxEmissionsNOxSensitivity>
-      <MaxEmissionsPmSensitivity z:Id="i122">
+      <MaxEmissionsPmSensitivity z:Id="i98">
         <decimal>0</decimal>
       </MaxEmissionsPmSensitivity>
-      <MaxEmissionsSo2Sensitivity z:Id="i123">
+      <MaxEmissionsSo2Sensitivity z:Id="i99">
         <decimal>0</decimal>
       </MaxEmissionsSo2Sensitivity>
-      <MaxEmissionsUhcSensitivity z:Id="i124">
+      <MaxEmissionsUhcSensitivity z:Id="i100">
         <decimal>0</decimal>
       </MaxEmissionsUhcSensitivity>
     </Emissions>
     <Name>Default Parameters</Name>
-    <OutageSettings z:Id="i125">
-      <BatteryOutageReserve z:Id="i126">
+    <OutageSettings z:Id="i101">
+      <BatteryOutageReserve z:Id="i102">
         <decimal>0</decimal>
       </BatteryOutageReserve>
-      <CapacityShortagePenalty z:Id="i127">
+      <CapacityShortagePenalty z:Id="i103">
         <decimal>0</decimal>
       </CapacityShortagePenalty>
-      <DowntimePenalty z:Id="i128">
+      <DowntimePenalty z:Id="i104">
         <decimal>0</decimal>
       </DowntimePenalty>
       <EnableBatteryOutageReserve>false</EnableBatteryOutageReserve>
       <GeneratorDuringOutageOnly>false</GeneratorDuringOutageOnly>
-      <MaximumCapacityShortagePercent z:Id="i129">
+      <MaximumCapacityShortagePercent z:Id="i105">
         <decimal>0</decimal>
       </MaximumCapacityShortagePercent>
-      <MaximumDowntimeHours z:Id="i130">
+      <MaximumDowntimeHours z:Id="i106">
         <decimal>0</decimal>
       </MaximumDowntimeHours>
-      <MultidayOutages xmlns:d3p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Outages" z:Id="i131">
+      <MultidayOutages xmlns:d3p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Outages" z:Id="i107">
         <d3p1:DispatchHasForesight>false</d3p1:DispatchHasForesight>
         <d3p1:GeneratorDuringOutageOnly>false</d3p1:GeneratorDuringOutageOnly>
         <d3p1:RandomSeedOffset>0</d3p1:RandomSeedOffset>
-        <d3p1:YearsPerOutage z:Id="i132">
+        <d3p1:YearsPerOutage z:Id="i108">
           <decimal>1</decimal>
         </d3p1:YearsPerOutage>
-        <d3p1:DurationDays z:Id="i133">
+        <d3p1:DurationDays z:Id="i109">
           <decimal>0</decimal>
         </d3p1:DurationDays>
         <d3p1:Name>Resilience Outages</d3p1:Name>
         <d3p1:StartDate>2018-01-01T00:00:00</d3p1:StartDate>
         <d3p1:UseRandomDate>false</d3p1:UseRandomDate>
       </MultidayOutages>
-      <ReliabilityOutages xmlns:d3p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Outages" z:Id="i134">
+      <ReliabilityOutages xmlns:d3p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Outages" z:Id="i110">
         <d3p1:DispatchHasForesight>false</d3p1:DispatchHasForesight>
         <d3p1:GeneratorDuringOutageOnly>false</d3p1:GeneratorDuringOutageOnly>
         <d3p1:RandomSeedOffset>0</d3p1:RandomSeedOffset>
-        <d3p1:YearsPerOutage z:Id="i135">
+        <d3p1:YearsPerOutage z:Id="i111">
           <decimal>1</decimal>
         </d3p1:YearsPerOutage>
-        <d3p1:Frequency z:Id="i136">
+        <d3p1:Frequency z:Id="i112">
           <decimal>0</decimal>
         </d3p1:Frequency>
-        <d3p1:MeanRepairHours z:Id="i137">
+        <d3p1:MeanRepairHours z:Id="i113">
           <decimal>0</decimal>
         </d3p1:MeanRepairHours>
         <d3p1:Name>Reliability Outages</d3p1:Name>
@@ -36445,7 +35678,7 @@
       </ReliabilityOutages>
     </OutageSettings>
     <Outages xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Outages" i:nil="true" />
-    <SystemControl z:Id="i138">
+    <SystemControl z:Id="i114">
       <AllowExcessElectricityToServeThermalLoad>false</AllowExcessElectricityToServeThermalLoad>
       <AllowGeneratorsToOperateSimultaneously>true</AllowGeneratorsToOperateSimultaneously>
       <AllowMultipleGenerators>true</AllowMultipleGenerators>
@@ -36468,10 +35701,10 @@
       <MaxExcessThermalOutput>10</MaxExcessThermalOutput>
       <MaximumRenewablePenetrationThreshold>55</MaximumRenewablePenetrationThreshold>
       <MinimizationStrategy>Economic</MinimizationStrategy>
-      <MultiYear z:Id="i139">
+      <MultiYear z:Id="i115">
         <IsEnabled>false</IsEnabled>
       </MultiYear>
-      <Optimizer z:Id="i140">
+      <Optimizer z:Id="i116">
         <FocusFactor>2</FocusFactor>
         <MaximumSimulations>100000</MaximumSimulations>
         <MinimumSpacing>0</MinimumSpacing>
@@ -36482,10 +35715,10 @@
         <SystemDesignPrecision>0.01</SystemDesignPrecision>
         <UseBaseCase>false</UseBaseCase>
       </Optimizer>
-      <RandomSeed z:Id="i141">
+      <RandomSeed z:Id="i117">
         <decimal>0</decimal>
       </RandomSeed>
-      <SetpointStateOfChargeSensitivity z:Id="i142">
+      <SetpointStateOfChargeSensitivity z:Id="i118">
         <decimal>80</decimal>
       </SetpointStateOfChargeSensitivity>
       <TimestepInMinutes>60</TimestepInMinutes>
@@ -36493,13 +35726,13 @@
       <WarnAboutRenewablePenetration>true</WarnAboutRenewablePenetration>
       <Year>2007</Year>
     </SystemControl>
-    <UtilitySettings xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Components.Utility" z:Id="i143">
+    <UtilitySettings xmlns:d2p1="http://schemas.datacontract.org/2004/07/HomerModel.Model.Components.Utility" z:Id="i119">
       <d2p1:HasInterconnectionLimit>false</d2p1:HasInterconnectionLimit>
       <d2p1:InterconnectionLimit>999999</d2p1:InterconnectionLimit>
     </UtilitySettings>
   </SimulationParameters>
   <SolarDniResources>
-    <SolarDni z:Id="i144">
+    <SolarDni z:Id="i120">
       <Name>DNI</Name>
       <Notes i:nil="true" />
       <DataSourceDescription i:nil="true" />
@@ -36520,7 +35753,7 @@
         <a:decimal>0.0</a:decimal>
         <a:decimal>0.0</a:decimal>
       </MonthlyAverage>
-      <ScaledAnnualAverageSensitivity z:Id="i145">
+      <ScaledAnnualAverageSensitivity z:Id="i121">
         <decimal>0</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
@@ -36529,39 +35762,39 @@
     </SolarDni>
   </SolarDniResources>
   <SolarResources>
-    <Solar z:Id="i146">
+    <Solar z:Id="i122">
       <Name>Solar</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 3/17/2022 1:17:58 PM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:17 PM from:
 National Renewable Energy Laboratory database.
 National Solar Radiation Database
-cellMidpointLatitude: 41.883998870849609
-cellMidpointLongitude: -87.475997924804688
+cellMidpointLatitude: 64.7969970703125
+cellMidpointLongitude: -147.34100341796875
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 3/17/2022 1:17:58 PM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:17 PM from:
 National Renewable Energy Laboratory database.
 National Solar Radiation Database
-cellMidpointLatitude: 41.883998870849609
-cellMidpointLongitude: -87.475997924804688
+cellMidpointLatitude: 64.7969970703125
+cellMidpointLongitude: -147.34100341796875
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>1.67</a:decimal>
-        <a:decimal>2.35</a:decimal>
-        <a:decimal>3.44</a:decimal>
-        <a:decimal>4.57</a:decimal>
-        <a:decimal>5.42</a:decimal>
-        <a:decimal>5.92</a:decimal>
+        <a:decimal>0.13</a:decimal>
+        <a:decimal>0.71</a:decimal>
+        <a:decimal>2.19</a:decimal>
+        <a:decimal>4.09</a:decimal>
+        <a:decimal>5.01</a:decimal>
         <a:decimal>5.68</a:decimal>
-        <a:decimal>5.04</a:decimal>
-        <a:decimal>4.04</a:decimal>
-        <a:decimal>2.83</a:decimal>
-        <a:decimal>1.7</a:decimal>
-        <a:decimal>1.41</a:decimal>
+        <a:decimal>5.34</a:decimal>
+        <a:decimal>3.91</a:decimal>
+        <a:decimal>2.35</a:decimal>
+        <a:decimal>1.04</a:decimal>
+        <a:decimal>0.31</a:decimal>
+        <a:decimal>0.05</a:decimal>
       </MonthlyAverage>
-      <ScaledAnnualAverageSensitivity z:Id="i147">
-        <decimal>3.6725</decimal>
+      <ScaledAnnualAverageSensitivity z:Id="i123">
+        <decimal>2.5675</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
@@ -36569,10 +35802,10 @@ cellMidpointLongitude: -87.475997924804688
     </Solar>
   </SolarResources>
   <Storage>
-    <Storage z:Id="i148">
+    <Storage z:Id="i124">
       <Abbreviation>1kWh LI</Abbreviation>
       <Brand>Generic</Brand>
-      <CapitalCostMultiplierSensitivity z:Id="i149">
+      <CapitalCostMultiplierSensitivity z:Id="i125">
         <decimal>1</decimal>
       </CapitalCostMultiplierSensitivity>
       <CostMatrix />
@@ -36582,10 +35815,10 @@ cellMidpointLongitude: -87.475997924804688
       <Modified>2018-06-12T15:54:01.3207874-05:00</Modified>
       <Name>Generic 1kWh Li-Ion</Name>
       <Notes>This is a generic 6 volt lithium ion battery with 1 kWh of energy storage.</Notes>
-      <OmCostMultiplierSensitivity z:Id="i150">
+      <OmCostMultiplierSensitivity z:Id="i126">
         <decimal>1</decimal>
       </OmCostMultiplierSensitivity>
-      <Optimizer z:Id="i151">
+      <Optimizer z:Id="i127">
         <BaseCase>0</BaseCase>
         <LowerBound>0</LowerBound>
         <MinimumSpacing>0</MinimumSpacing>
@@ -36594,7 +35827,7 @@ cellMidpointLongitude: -87.475997924804688
         <UseOptimizer>false</UseOptimizer>
       </Optimizer>
       <ProductImage>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</ProductImage>
-      <ReplacementCostMultiplierSensitivity z:Id="i152">
+      <ReplacementCostMultiplierSensitivity z:Id="i128">
         <decimal>1</decimal>
       </ReplacementCostMultiplierSensitivity>
       <RequiresOneMinuteTimestep>false</RequiresOneMinuteTimestep>
@@ -36603,10 +35836,10 @@ cellMidpointLongitude: -87.475997924804688
       <Weight>15</Weight>
       <ApplyMinimumLifetime>false</ApplyMinimumLifetime>
       <Chemistry>Li-Ion</Chemistry>
-      <DedicatedConverter z:Id="i153">
+      <DedicatedConverter z:Id="i129">
         <Abbreviation>conv</Abbreviation>
         <Brand i:nil="true" />
-        <CapitalCostMultiplierSensitivity z:Id="i154">
+        <CapitalCostMultiplierSensitivity z:Id="i130">
           <decimal>1</decimal>
         </CapitalCostMultiplierSensitivity>
         <CostMatrix />
@@ -36616,10 +35849,10 @@ cellMidpointLongitude: -87.475997924804688
         <Modified>0001-01-01T00:00:00</Modified>
         <Name>Dedicated Converter</Name>
         <Notes i:nil="true" />
-        <OmCostMultiplierSensitivity z:Id="i155">
+        <OmCostMultiplierSensitivity z:Id="i131">
           <decimal>1</decimal>
         </OmCostMultiplierSensitivity>
-        <Optimizer z:Id="i156">
+        <Optimizer z:Id="i132">
           <BaseCase>0</BaseCase>
           <LowerBound>0</LowerBound>
           <MinimumSpacing>0</MinimumSpacing>
@@ -36628,7 +35861,7 @@ cellMidpointLongitude: -87.475997924804688
           <UseOptimizer>false</UseOptimizer>
         </Optimizer>
         <ProductImage i:nil="true" />
-        <ReplacementCostMultiplierSensitivity z:Id="i157">
+        <ReplacementCostMultiplierSensitivity z:Id="i133">
           <decimal>1</decimal>
         </ReplacementCostMultiplierSensitivity>
         <RequiresOneMinuteTimestep>false</RequiresOneMinuteTimestep>
@@ -36636,18 +35869,18 @@ cellMidpointLongitude: -87.475997924804688
         <Website i:nil="true" />
         <Weight>0</Weight>
         <EfficiencyTable />
-        <InverterEfficiencySensitivity z:Id="i158">
+        <InverterEfficiencySensitivity z:Id="i134">
           <decimal>100</decimal>
         </InverterEfficiencySensitivity>
-        <OptimizationVariable z:Id="i159">
-          <CostTable z:Id="i160">
-            <CapitalMultiplier z:Id="i161">
+        <OptimizationVariable z:Id="i135">
+          <CostTable z:Id="i136">
+            <CapitalMultiplier z:Id="i137">
               <decimal>1</decimal>
             </CapitalMultiplier>
             <Costs>
-              <Cost z:Id="i162">
+              <Cost z:Id="i138">
                 <CapitalCostDetail>
-                  <CostCalculatorItem z:Id="i163">
+                  <CostCalculatorItem z:Id="i139">
                     <Name>Capital</Name>
                     <Quantity>1</Quantity>
                     <UnitCost>0</UnitCost>
@@ -36658,7 +35891,7 @@ cellMidpointLongitude: -87.475997924804688
                 <Quantity>1</Quantity>
                 <Replacement>0</Replacement>
                 <ReplacementCostDetail>
-                  <CostCalculatorItem z:Id="i164">
+                  <CostCalculatorItem z:Id="i140">
                     <Name>Replacement</Name>
                     <Quantity>1</Quantity>
                     <UnitCost>0</UnitCost>
@@ -36667,10 +35900,10 @@ cellMidpointLongitude: -87.475997924804688
               </Cost>
             </Costs>
             <Lifetimes>
-              <Lifetime z:Id="i165">
+              <Lifetime z:Id="i141">
                 <Name>time</Name>
                 <Units>years</Units>
-                <Value z:Id="i166">
+                <Value z:Id="i142">
                   <decimal>20</decimal>
                 </Value>
               </Lifetime>
@@ -36678,66 +35911,66 @@ cellMidpointLongitude: -87.475997924804688
             <Name i:nil="true" />
             <OmFormat i:nil="true" />
             <OmHide>false</OmHide>
-            <OmMultiplier z:Id="i167">
+            <OmMultiplier z:Id="i143">
               <decimal>1</decimal>
             </OmMultiplier>
             <OmUnits>$/year</OmUnits>
-            <ReplacementMultiplier z:Id="i168">
+            <ReplacementMultiplier z:Id="i144">
               <decimal>1</decimal>
             </ReplacementMultiplier>
             <Unit>Capacity</Unit>
-            <VariableOmCost z:Id="i169">
+            <VariableOmCost z:Id="i145">
               <decimal>0</decimal>
             </VariableOmCost>
           </CostTable>
           <Disabled>false</Disabled>
           <Model>Capacity</Model>
           <Name>Dedicated Converter</Name>
-          <Optimizer z:Id="i170" xmlns="" i:type="OptimizerOfint">
+          <Optimizer z:Id="i146" xmlns="" i:type="OptimizerOfint">
             <ShowAdvancedInputs>true</ShowAdvancedInputs>
             <BaseCase>0</BaseCase>
             <LowerBound>0</LowerBound>
             <MinimumSpacing>0</MinimumSpacing>
             <UpperBound>0</UpperBound>
           </Optimizer>
-          <SearchSpace z:Id="i171" xmlns="" i:type="SearchSpaceOfdecimal">
-            <Values z:Id="i172">
+          <SearchSpace z:Id="i147" xmlns="" i:type="SearchSpaceOfdecimal">
+            <Values z:Id="i148">
               <decimal>1</decimal>
             </Values>
           </SearchSpace>
           <Units>kW</Units>
           <UseOptimizer>false</UseOptimizer>
         </OptimizationVariable>
-        <RectifierEfficiencySensitivity z:Id="i173">
+        <RectifierEfficiencySensitivity z:Id="i149">
           <decimal>100</decimal>
         </RectifierEfficiencySensitivity>
-        <RectifierRelativeCapacitySensitivity z:Id="i174">
+        <RectifierRelativeCapacitySensitivity z:Id="i150">
           <decimal>100</decimal>
         </RectifierRelativeCapacitySensitivity>
         <UseDedicatedConverter>false</UseDedicatedConverter>
         <UseEfficiencyTable>false</UseEfficiencyTable>
       </DedicatedConverter>
       <Icon>Battery</Icon>
-      <Maintenance z:Id="i175">
+      <Maintenance z:Id="i151">
         <MaintenanceItems />
         <UseMaintenanceSchedule>false</UseMaintenanceSchedule>
       </Maintenance>
-      <MinimumLifetime z:Id="i176">
+      <MinimumLifetime z:Id="i152">
         <decimal>5</decimal>
       </MinimumLifetime>
-      <Model z:Id="i177" xmlns="" i:type="IdealizedEnergyModel">
+      <Model z:Id="i153" xmlns="" i:type="IdealizedEnergyModel">
         <ApplyMaximumChargeCurrent>true</ApplyMaximumChargeCurrent>
         <ApplyMaximumChargeRate>false</ApplyMaximumChargeRate>
         <ApplyMaximumDischargeCurrent>true</ApplyMaximumDischargeCurrent>
         <CapacityCurve />
-        <InitialStateOfCharge z:Id="i178">
+        <InitialStateOfCharge z:Id="i154">
           <decimal>50.00</decimal>
         </InitialStateOfCharge>
         <LifetimeCurve />
         <MaximumChargeCurrent>166.6667</MaximumChargeCurrent>
         <MaximumChargeRate>1</MaximumChargeRate>
         <MaximumDischargeCurrent>500</MaximumDischargeCurrent>
-        <MinimumStateOfCharge z:Id="i179">
+        <MinimumStateOfCharge z:Id="i155">
           <decimal>20</decimal>
         </MinimumStateOfCharge>
         <StringSize>1</StringSize>
@@ -36750,15 +35983,15 @@ cellMidpointLongitude: -87.475997924804688
         <SuggestedLifetimeThroughput>0</SuggestedLifetimeThroughput>
       </Model>
       <OptimizationVariables>
-        <OptimizationVariable z:Id="i180">
-          <CostTable z:Id="i181">
-            <CapitalMultiplier z:Id="i182">
+        <OptimizationVariable z:Id="i156">
+          <CostTable z:Id="i157">
+            <CapitalMultiplier z:Id="i158">
               <decimal>1</decimal>
             </CapitalMultiplier>
             <Costs>
-              <Cost z:Id="i183">
+              <Cost z:Id="i159">
                 <CapitalCostDetail>
-                  <CostCalculatorItem z:Id="i184">
+                  <CostCalculatorItem z:Id="i160">
                     <Name>Capital</Name>
                     <Quantity>1</Quantity>
                     <UnitCost>600</UnitCost>
@@ -36769,7 +36002,7 @@ cellMidpointLongitude: -87.475997924804688
                 <Quantity>1</Quantity>
                 <Replacement>341</Replacement>
                 <ReplacementCostDetail>
-                  <CostCalculatorItem z:Id="i185">
+                  <CostCalculatorItem z:Id="i161">
                     <Name>Replacement</Name>
                     <Quantity>1</Quantity>
                     <UnitCost>600</UnitCost>
@@ -36778,17 +36011,17 @@ cellMidpointLongitude: -87.475997924804688
               </Cost>
             </Costs>
             <Lifetimes>
-              <Lifetime z:Id="i186">
+              <Lifetime z:Id="i162">
                 <Name>time</Name>
                 <Units>years</Units>
-                <Value z:Id="i187">
+                <Value z:Id="i163">
                   <decimal>15</decimal>
                 </Value>
               </Lifetime>
-              <Lifetime z:Id="i188">
+              <Lifetime z:Id="i164">
                 <Name>throughput</Name>
                 <Units>kWh</Units>
-                <Value z:Id="i189">
+                <Value z:Id="i165">
                   <decimal>3000</decimal>
                 </Value>
               </Lifetime>
@@ -36796,30 +36029,30 @@ cellMidpointLongitude: -87.475997924804688
             <Name>Batteries</Name>
             <OmFormat i:nil="true" />
             <OmHide>false</OmHide>
-            <OmMultiplier z:Id="i190">
+            <OmMultiplier z:Id="i166">
               <decimal>1</decimal>
             </OmMultiplier>
             <OmUnits>$/year</OmUnits>
-            <ReplacementMultiplier z:Id="i191">
+            <ReplacementMultiplier z:Id="i167">
               <decimal>1</decimal>
             </ReplacementMultiplier>
             <Unit>Quantity</Unit>
-            <VariableOmCost z:Id="i192">
+            <VariableOmCost z:Id="i168">
               <decimal>0</decimal>
             </VariableOmCost>
           </CostTable>
           <Disabled>false</Disabled>
           <Model>Quantity</Model>
           <Name>Strings</Name>
-          <Optimizer z:Id="i193" xmlns="" i:type="OptimizerOfint">
+          <Optimizer z:Id="i169" xmlns="" i:type="OptimizerOfint">
             <ShowAdvancedInputs>false</ShowAdvancedInputs>
             <BaseCase>0</BaseCase>
             <LowerBound>0</LowerBound>
             <MinimumSpacing>0</MinimumSpacing>
             <UpperBound>120000</UpperBound>
           </Optimizer>
-          <SearchSpace z:Id="i194" xmlns="" i:type="SearchSpaceOfint">
-            <Values z:Id="i195">
+          <SearchSpace z:Id="i170" xmlns="" i:type="SearchSpaceOfint">
+            <Values z:Id="i171">
               <int>0</int>
               <int>1</int>
             </Values>
@@ -36831,39 +36064,39 @@ cellMidpointLongitude: -87.475997924804688
     </Storage>
   </Storage>
   <TemperatureResources>
-    <Temperature z:Id="i196">
+    <Temperature z:Id="i172">
       <Name>Temp</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 3/17/2022 1:17:58 PM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:17 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average air temperature over 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 41.75
-cellMidpointLongitude: -87.75
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 3/17/2022 1:17:58 PM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:17 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average air temperature over 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 41.75
-cellMidpointLongitude: -87.75
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>-4.6</a:decimal>
-        <a:decimal>-2.54</a:decimal>
-        <a:decimal>2.58</a:decimal>
-        <a:decimal>8.23</a:decimal>
-        <a:decimal>13.8</a:decimal>
-        <a:decimal>19.38</a:decimal>
-        <a:decimal>22.65</a:decimal>
-        <a:decimal>22.11</a:decimal>
-        <a:decimal>17.99</a:decimal>
-        <a:decimal>11.11</a:decimal>
-        <a:decimal>4.23</a:decimal>
-        <a:decimal>-2.21</a:decimal>
+        <a:decimal>-20.08</a:decimal>
+        <a:decimal>-17.06</a:decimal>
+        <a:decimal>-13.49</a:decimal>
+        <a:decimal>-3.12</a:decimal>
+        <a:decimal>7.47</a:decimal>
+        <a:decimal>14.11</a:decimal>
+        <a:decimal>15.27</a:decimal>
+        <a:decimal>12.01</a:decimal>
+        <a:decimal>5.49</a:decimal>
+        <a:decimal>-5.27</a:decimal>
+        <a:decimal>-16.38</a:decimal>
+        <a:decimal>-17.86</a:decimal>
       </MonthlyAverage>
-      <ScaledAnnualAverageSensitivity z:Id="i197">
-        <decimal>9.394166666666666666666666667</decimal>
+      <ScaledAnnualAverageSensitivity z:Id="i173">
+        <decimal>-3.2425</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
@@ -36874,39 +36107,39 @@ cellMidpointLongitude: -87.75
   <Utilities />
   <WaterResources />
   <WindResources>
-    <Wind z:Id="i198">
+    <Wind z:Id="i174">
       <Name>Wind</Name>
       <Notes i:nil="true" />
-      <DataSourceDescription>Downloaded at 3/17/2022 1:17:57 PM from:
+      <DataSourceDescription>Downloaded at 1/26/2022 5:27:16 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average wind speed at 50m above the surface of earth over a 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 41.75
-cellMidpointLongitude: -87.75
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescription>
-      <DataSourceDescriptionMonthlyAverages>Downloaded at 3/17/2022 1:17:57 PM from:
+      <DataSourceDescriptionMonthlyAverages>Downloaded at 1/26/2022 5:27:16 PM from:
 NASA Prediction of Worldwide Energy Resource (POWER)  database.
 Monthly average wind speed at 50m above the surface of earth over a 30-year period (Jan 1984 – Dec 2013)
-cellMidpointLatitude: 41.75
-cellMidpointLongitude: -87.75
+cellMidpointLatitude: 64.75
+cellMidpointLongitude: -147.25
 </DataSourceDescriptionMonthlyAverages>
       <DataSourceDescriptionTimeSeries i:nil="true" />
       <IsTimeSeriesData>false</IsTimeSeriesData>
       <MonthlyAverage>
-        <a:decimal>7.86</a:decimal>
-        <a:decimal>7.63</a:decimal>
-        <a:decimal>7.72</a:decimal>
-        <a:decimal>7.7</a:decimal>
-        <a:decimal>6.92</a:decimal>
-        <a:decimal>5.95</a:decimal>
-        <a:decimal>5.44</a:decimal>
-        <a:decimal>5.31</a:decimal>
-        <a:decimal>6.21</a:decimal>
-        <a:decimal>7.31</a:decimal>
-        <a:decimal>7.82</a:decimal>
-        <a:decimal>7.56</a:decimal>
+        <a:decimal>5.15</a:decimal>
+        <a:decimal>4.95</a:decimal>
+        <a:decimal>4.48</a:decimal>
+        <a:decimal>3.89</a:decimal>
+        <a:decimal>3.72</a:decimal>
+        <a:decimal>3.41</a:decimal>
+        <a:decimal>3.36</a:decimal>
+        <a:decimal>3.6</a:decimal>
+        <a:decimal>3.8</a:decimal>
+        <a:decimal>3.9</a:decimal>
+        <a:decimal>4.52</a:decimal>
+        <a:decimal>5.01</a:decimal>
       </MonthlyAverage>
-      <ScaledAnnualAverageSensitivity z:Id="i199">
-        <decimal>6.9525</decimal>
+      <ScaledAnnualAverageSensitivity z:Id="i175">
+        <decimal>4.1491666666666666666666666667</decimal>
       </ScaledAnnualAverageSensitivity>
       <TimeSeriesData i:nil="true" />
       <TimeSeriesFileName i:nil="true" />
@@ -36917,26 +36150,26 @@ cellMidpointLongitude: -87.75
       <DiurnalPatternStrength>0.25</DiurnalPatternStrength>
       <HourOfPeakWindspeed>15</HourOfPeakWindspeed>
       <IsWindSpeedProfileLogarithmic>true</IsWindSpeedProfileLogarithmic>
-      <PowerLawExponentSensitivity z:Id="i200">
+      <PowerLawExponentSensitivity z:Id="i176">
         <decimal>0.14</decimal>
       </PowerLawExponentSensitivity>
-      <SurfaceRoughnessLengthSensitivity z:Id="i201">
+      <SurfaceRoughnessLengthSensitivity z:Id="i177">
         <decimal>0.01</decimal>
       </SurfaceRoughnessLengthSensitivity>
       <WeibullK>2</WeibullK>
     </Wind>
   </WindResources>
   <WindTurbines>
-    <WindTurbine z:Id="i202">
+    <WindTurbine z:Id="i178">
       <Abbreviation>G1500</Abbreviation>
       <Brand>Generic</Brand>
-      <CapitalCostMultiplierSensitivity z:Id="i203">
+      <CapitalCostMultiplierSensitivity z:Id="i179">
         <decimal>1</decimal>
       </CapitalCostMultiplierSensitivity>
       <CostMatrix>
-        <Cost z:Id="i204">
+        <Cost z:Id="i180">
           <CapitalCostDetail>
-            <CostCalculatorItem z:Id="i205">
+            <CostCalculatorItem z:Id="i181">
               <Name>Capital</Name>
               <Quantity>1</Quantity>
               <UnitCost>3000000</UnitCost>
@@ -36947,7 +36180,7 @@ cellMidpointLongitude: -87.75
           <Quantity>1</Quantity>
           <Replacement>1537500.00</Replacement>
           <ReplacementCostDetail>
-            <CostCalculatorItem z:Id="i206">
+            <CostCalculatorItem z:Id="i182">
               <Name>Replacement</Name>
               <Quantity>1</Quantity>
               <UnitCost>3000000</UnitCost>
@@ -36961,10 +36194,10 @@ cellMidpointLongitude: -87.75
       <Modified>2016-11-18T15:56:14.2704935-06:00</Modified>
       <Name>Generic 1.5 MW</Name>
       <Notes></Notes>
-      <OmCostMultiplierSensitivity z:Id="i207">
+      <OmCostMultiplierSensitivity z:Id="i183">
         <decimal>1</decimal>
       </OmCostMultiplierSensitivity>
-      <Optimizer z:Id="i208">
+      <Optimizer z:Id="i184">
         <BaseCase>0</BaseCase>
         <LowerBound>0</LowerBound>
         <MinimumSpacing>0</MinimumSpacing>
@@ -36973,7 +36206,7 @@ cellMidpointLongitude: -87.75
         <UseOptimizer>true</UseOptimizer>
       </Optimizer>
       <ProductImage i:nil="true" />
-      <ReplacementCostMultiplierSensitivity z:Id="i209">
+      <ReplacementCostMultiplierSensitivity z:Id="i185">
         <decimal>1</decimal>
       </ReplacementCostMultiplierSensitivity>
       <RequiresOneMinuteTimestep>false</RequiresOneMinuteTimestep>
@@ -36986,89 +36219,89 @@ cellMidpointLongitude: -87.75
       <CurtailmentLosses>0</CurtailmentLosses>
       <ElectricalLosses>0</ElectricalLosses>
       <EnvironmentalLosses>0</EnvironmentalLosses>
-      <HubHeightSensitivity z:Id="i210">
+      <HubHeightSensitivity z:Id="i186">
         <decimal>80</decimal>
       </HubHeightSensitivity>
-      <LifetimeSensitivity z:Id="i211">
+      <LifetimeSensitivity z:Id="i187">
         <decimal>20</decimal>
       </LifetimeSensitivity>
-      <Maintenance z:Id="i212">
+      <Maintenance z:Id="i188">
         <MaintenanceItems />
         <UseMaintenanceSchedule>false</UseMaintenanceSchedule>
       </Maintenance>
       <MaintenanceSchedule i:nil="true" />
       <OtherLosses>0</OtherLosses>
       <PowerCurve>
-        <PowerCurveEntry z:Id="i213">
+        <PowerCurveEntry z:Id="i189">
           <PowerOutput>0</PowerOutput>
           <WindSpeed>0</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i214">
+        <PowerCurveEntry z:Id="i190">
           <PowerOutput>0</PowerOutput>
           <WindSpeed>4</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i215">
+        <PowerCurveEntry z:Id="i191">
           <PowerOutput>80</PowerOutput>
           <WindSpeed>4</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i216">
+        <PowerCurveEntry z:Id="i192">
           <PowerOutput>150</PowerOutput>
           <WindSpeed>5</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i217">
+        <PowerCurveEntry z:Id="i193">
           <PowerOutput>250</PowerOutput>
           <WindSpeed>6</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i218">
+        <PowerCurveEntry z:Id="i194">
           <PowerOutput>400</PowerOutput>
           <WindSpeed>7</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i219">
+        <PowerCurveEntry z:Id="i195">
           <PowerOutput>600</PowerOutput>
           <WindSpeed>8</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i220">
+        <PowerCurveEntry z:Id="i196">
           <PowerOutput>850</PowerOutput>
           <WindSpeed>9</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i221">
+        <PowerCurveEntry z:Id="i197">
           <PowerOutput>1150</PowerOutput>
           <WindSpeed>10</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i222">
+        <PowerCurveEntry z:Id="i198">
           <PowerOutput>1350</PowerOutput>
           <WindSpeed>11</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i223">
+        <PowerCurveEntry z:Id="i199">
           <PowerOutput>1450</PowerOutput>
           <WindSpeed>12</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i224">
+        <PowerCurveEntry z:Id="i200">
           <PowerOutput>1490</PowerOutput>
           <WindSpeed>13</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i225">
+        <PowerCurveEntry z:Id="i201">
           <PowerOutput>1500</PowerOutput>
           <WindSpeed>14</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i226">
+        <PowerCurveEntry z:Id="i202">
           <PowerOutput>1500</PowerOutput>
           <WindSpeed>16</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i227">
+        <PowerCurveEntry z:Id="i203">
           <PowerOutput>1500</PowerOutput>
           <WindSpeed>20</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i228">
+        <PowerCurveEntry z:Id="i204">
           <PowerOutput>1500</PowerOutput>
           <WindSpeed>25</WindSpeed>
         </PowerCurveEntry>
-        <PowerCurveEntry z:Id="i229">
+        <PowerCurveEntry z:Id="i205">
           <PowerOutput>0</PowerOutput>
           <WindSpeed>25</WindSpeed>
         </PowerCurveEntry>
       </PowerCurve>
-      <QuantityOptimization z:Id="i230">
+      <QuantityOptimization z:Id="i206">
         <int>0</int>
         <int>1</int>
       </QuantityOptimization>
