@@ -1,63 +1,63 @@
 ,Location,KCC,Latitude,Longitude
-0,"Anchorage, AK",Dfc,61.21833,-149.9
-1,"Ashland, WI",Dfb,46.59333,-90.84
-2,"Atlanta, GA",Cfa,33.74833,-84.38833
-3,"Bangor, ME",Dfb,44.80167,-68.77167
-4,"Bend, OR",Bsk,44.06,-121.2467
-5,"Benton County, OR (Corvallis)",Csb,44.6,-123.21
-6,"Birmingham, AL",Cfa,33.51833,-86.81
-7,"Bismarck, ND",Dfb,46.80833,-100.7833
-8,"Blaine County, MT ",Bsk,48.60667,-108.9467
-9,"Boise, ID",Bsk,43.615,-116.2017
-10,"Brewster,MA",Cfa,41.76,-70.08333
-11,"Burlington, VT",Dfa,44.47667,-73.20333
-12,"Buttonwillow,CA",Bwk,35.4,-119.47
-13,"Carson City, NV",Bsk,39.16333,-119.7667
-14,"Cheyenne, WY",Bsk,41.14,-104.82
-15,"Chicago, IL",Dfa,41.87833,-87.63
-16,"Coalville, UT",Dfb,40.91833,-111.4
-17,"Coeur d'Alene/Kootenai, ID",Dsb,47.86833,-116.4667
-18,"Columbia, MO",Cfa,38.95167,-92.33333
-19,"Columbus, OH",Dfa,39.96167,-82.99833
-20,"Crested Butte, CO",Dfc,38.87,-106.9883
-21,"Des Moines, IA",Dfa,41.58667,-93.625
-22,"Detroit, MI",Dfa,42.33167,-83.045
-23,"Eielson AFB, AK (borders Dfb/Dfc)",Dfc,64.64333,-147.0633
-24,"Everglades Natl.Park, FL",Am,25.28667,-80.89833
-25,"Flagstaff, AZ",Dsb,35.19833,-111.6483
-26,"Great Falls, MT",Bsk,47.505,-111.3
-27,"Hilo, HI",Af,19.72333,-155.0867
-28,"Idaho Falls, ID",Dfb,43.49333,-112.04
-29,"Jackson, MS",Cfa,32.29833,-90.185
-30,"Kaua'I, HI",Cfb,22.08167,-159.525
-31,"Lancaster, PA",Dfa,40.03833,-76.305
-32,"Laredo, TX",Bsh,27.50333,-99.50833
-33,"Las Vegas, NV",Bwh,36.17,-115.14
-34,"Lincoln, NE",Dfa,40.81333,-96.70333
-35,"Little Rock, AR",Cfa,34.74667,-92.29
-36,"Longview, WA",Csb,46.13833,-122.9383
-37,"Los Alamos, NM",Dfb,35.88,-106.3033
-38,"Marlinton, WV",Cfb,38.22333,-80.095
-39,"Marquette, MI",Dfb,46.535,-87.405
-40,"Medford, OR",Csa,42.32667,-122.875
-41,"Memphis, TN",Cfa,35.15,-90.04833
-42,"Miami, FL",Af,25.76167,-80.19167
-43,"Midland, TX (Oil Country)",Bsh,32.105,-102.1817
-44,"Mobile, AL",Cfa,30.695,-88.04
-45,"Moscow, ID",Csb,46.73167,-117.0
-46,"Neah Bay, WA",Cfb,48.36833,-124.625
-47,"New Orleans, LA",Cfa,29.95167,-90.07167
-48,"Oak Ridge, TN (ORNL)",Cfa,35.93167,-84.31
-49,"OK City, OK",Cfa,35.46833,-97.51667
-50,"Phoenix, AZ",Bwh,33.44833,-112.0733
-51,"Prescott, AZ",Csa,34.52833,-112.45
-52,"Pueblo, CO",Bsk,38.255,-104.6083
-53,"Raleigh, NC",Cfa,35.78,-78.63833
-54,"Rapid City, SD",Bsk,44.08,-103.2317
-55,"Redding, CA",Csa,40.58667,-122.3917
-56,"Richmond, VA",Cfa,37.54,-77.43667
-57,"Sacramento, CA",Csa,38.58167,-121.495
-58,"South Bend, IN",Dfa,41.67667,-86.25167
-59,"Syracuse, NY",Dfb ,43.04833,-76.14667
-60,"Wadena, MN",Dfa,46.44167,-95.13667
-61,"Yuma, AZ",Bwh,32.69333,-114.6283
+0,Anchorage,Dfc,61.21833,-149.9
+1,Ashland,Dfb,46.59333,-90.84
+2,AtlantaGA,Cfa,33.74833,-84.38833
+3,BangorME,Dfb,44.80167,-68.77167
+4,BendOre,Bsk,44.06,-121.2467
+5,BentonCountyOregon,Csb,44.6,-123.21
+6,BirminghamAL,Cfa,33.51833,-86.81
+7,BismarckND,Dfb,46.80833,-100.7833
+8,BlaineCountyMontana,Bsk,48.60667,-108.9467
+9,BoiseID,Bsk,43.615,-116.2017
+10,BrewsterMA,Cfa,41.76,-70.08333
+11,BurlingtonVT,Dfa,44.47667,-73.20333
+12,Buttonwillow,Bwk,35.4,-119.47
+13,CarsonCityNV,Bsk,39.16333,-119.7667
+14,CheyenneWY,Bsk,41.14,-104.82
+15,Chicago,Dfa,41.87833,-87.63
+16,CoalvilleUT,Dfb,40.91833,-111.4
+17,ColumbiaMO,Dsb,47.86833,-116.4667
+18,ColumbusOH,Cfa,38.95167,-92.33333
+19,CrestedButteCO,Dfa,39.96167,-82.99833
+20,DesMoinesIA,Dfc,38.87,-106.9883
+21,DetroitMI,Dfa,41.58667,-93.625
+22,EielsonAFB,Dfa,42.33167,-83.045
+23,Everglades,Dfc,64.64333,-147.0633
+24,Flagstaff,Am,25.28667,-80.89833
+25,GreatFallsMT,Dsb,35.19833,-111.6483
+26,Hilo,Bsk,47.505,-111.3
+27,IdahoFalls,Af,19.72333,-155.0867
+28,JacksonMS,Dfb,43.49333,-112.04
+29,Kauai,Cfa,32.29833,-90.185
+30,KootenaiCountyID,Cfb,22.08167,-159.525
+31,LancasterPA,Dfa,40.03833,-76.305
+32,LaredoTX,Bsh,27.50333,-99.50833
+33,LincolnNE,Bwh,36.17,-115.14
+34,LittleRockAR,Dfa,40.81333,-96.70333
+35,Longview,Cfa,34.74667,-92.29
+36,LosAlamosNM,Csb,46.13833,-122.9383
+37,MarlintonWV,Dfb,35.88,-106.3033
+38,MedfordOR,Cfb,38.22333,-80.095
+39,MemphisTN,Dfb,46.535,-87.405
+40,Miami,Csa,42.32667,-122.875
+41,MobileAL,Cfa,35.15,-90.04833
+42,MoscowID,Af,25.76167,-80.19167
+43,NOLA,Bsh,32.105,-102.1817
+44,NeahBay,Cfa,30.695,-88.04
+45,OKCity,Csb,46.73167,-117.0
+46,ORNL,Cfb,48.36833,-124.625
+47,PhoenixAZ,Cfa,29.95167,-90.07167
+48,PrescottAZ,Cfa,35.93167,-84.31
+49,Pueblo,Cfa,35.46833,-97.51667
+50,RaleighNC,Bwh,33.44833,-112.0733
+51,RapidCitySD,Csa,34.52833,-112.45
+52,ReddingCA,Bsk,38.255,-104.6083
+53,RichmondVA,Cfa,35.78,-78.63833
+54,Sacramento,Bsk,44.08,-103.2317
+55,SouthBendIN,Csa,40.58667,-122.3917
+56,Syracuse,Cfa,37.54,-77.43667
+57,TexasOil,Csa,38.58167,-121.495
+58,UPMich,Dfa,41.67667,-86.25167
+59,VegasNV,Dfb ,43.04833,-76.14667
+60,WadenaMN,Dfa,46.44167,-95.13667
+61,YumaAZ,Bwh,32.69333,-114.6283
